@@ -1,67 +1,80 @@
-/*let age = 11;
-console.log(age);
-console.log(1 + 9);
-
-let userName = "д'Артаньян";
-console.log(userName);*/
-
-/*let num = 0;
-
-while (num < 10) {
-  console.log(num);
-  num++;
-}*/
-
-/*let counter = 1;
-while (counter < 5) {
-  console.log(`Counter is ${counter}`);
-  counter++;
-}*/
-
-/*for (let i = 1; i < 10; i++) {
-  console.log(`${i}`);
+/*
+let outputEl = document.querySelector("#output"); //получаем элемент
+outputEl.textContent = "Hello"; // запись в элемент
+outputEl.innerHTML = "<h>Hello</h>"; // запись в элемент разметки
+*/
+/*
+function getSumm(num1, num2) {
+  console.log(num1 + num2);
 }
 
-let fruits = ["bananas", "orange", "cocos"];*/
+getSumm(5, 9);
+*/
+/*
+let num1 = 5;
+let num2 = 10;
 
-/*for (let i = 0; i < fruits.length; i++) {
-  console.log(fruits[i]);
-}*/
-
-/*let numbers = [10, 1, 8, 2, 3, 7, 4, 5, 6];
-
-let sum = 0;
-for (let i = 0; i < numbers.length; i++) {
-  sum += numbers[i];
+function incrementNumber(num) {
+  let num1 = 10;
+  let result = num + num1;
+  console.log(result);
 }
-console.log(sum);*/ /*
 
-let fruits = ["bananas", "orange", "cocos", "kotlety"];
-let isKotletyAvailabel = false;
-for (let i = 0; i < fruits.length; i++) {
-  if (fruits[i] === "kotlety") {
-    isKotletyAvailabe = true;
-    break;
+incrementNumber(num2);
+*/
+/*
+function getSumm(num1, num2) {
+  let result = num1 + num2;
+  return result;
+}
+let sum = getSumm(4, 7);
+console.log(sum);
+*/
+/*
+function getTotalBill(billArray) {
+  let sum = 0;
+  for (let item of billArray) {
+    sum += item;
+  }
+  return sum;
+}
+let billArray = getTotalBill([43, 65, 23, 54]);
+console.log(billArray);
+*/
+/*
+function checkAge(age) {
+  if (age >= 18) {
+    return "Wellcome";
+  } else {
+    return;
   }
 }
+console.log(checkAge(10));
+*/
+/*
+function calculateNumbers(num1, num2) {
+  let sum = num1 + num2;
+  let mult = num1 * num2;
 
-isKotletyAvailabe ? console.log("yes") : console.log("none");*/
-
-/*let fruits = ["bananas", "orange", "cocos", "kotlety"];
-
-/*for (let i = 0; i < fruits.length; i++) {
-  if (i % 2 === 0) {
-    continue;
-  }
-  console.log(fruits[i]);
-}*/
-
-/*for (let fruit of fruits) {
-  console.log(fruit);
-}*/
-
-/*let fruitsStr = "";
-for (let fruit of fruits) {
-  fruitsStr += fruit;
+  return { sum, mult };
+  // return { sum: sum, mult: mult };
 }
-console.log(fruits.join(", "));*/
+console.log(calculateNumbers(3, 6));
+*/
+/*
+function getSum(num1, num2) {
+  let result = num1 + num2;
+  console.log(result);
+}
+getSum(3, 5);
+console.log(result); // область видимости, поэтому не выведет результат
+*/
+/*
+let userName = 'Ivan';
+
+function changeValue(userName) {
+    userName = 'Svetlana';
+}
+changeValue();
+console.log(userName); // Ivan из-за области видимости
+*/

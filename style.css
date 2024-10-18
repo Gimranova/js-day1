@@ -1,0 +1,10 @@
+div {
+    color: rgb(57, 53, 53);
+    border: 3px solid rgb(129, 129, 180);
+    background-color: rgb(251, 221, 221);
+    margin: 30px 20px;
+    padding: 10px;
+    font-style: italic;
+    line-height: normal;
+};
+
