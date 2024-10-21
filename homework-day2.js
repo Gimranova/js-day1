@@ -9,8 +9,13 @@ let student = {
   street: "Chertanovskaya",
 }; 
 
+let outputStudent = `firstName: ${student.firstName}
+  lastName: ${student.lastName} age: ${student.age} 
+  phone: ${student.phone} city: ${student.city} 
+  "house number": ${student["house number"]} 
+  street: ${student.street}`
 
-
+console.log(outputStudent);
 
 // 2. Из объекта и задания 1 сформируйте строку с разметкой HTML и выведите в документ.
 let output = `<div>
@@ -42,9 +47,9 @@ let users = [
   },
 ]; 
 
-Object.keys(users).forEach(key => {
-    console.log(key, users[key]);
-  });
+users.forEach((user) => {
+  console.log(user.fName);
+});
 
 
 /* 4*. Из массива в задании 3 сформируйте разметку HTML и выведите в документ.
@@ -140,6 +145,8 @@ console.log(fruits);
 
 // 7. Получите из исходного массива массив ["cat", "dog", "bat",  "cow", "chicken", "mouse", "pig", "goat", "sheep","camel"]
 let pets = ["cat", "dog", "bat", "mouse", "pig", "goat", "sheep", "cow", "chicken", "camel"];
+pets.splice(3, 7, "cow", "chicken", "mouse", "pig", "goat", "sheep","camel");
+console.log(pets);
 
 // 8. Объедините два массива в один.
 let numbers = [1, 4, 6, 3, 2, 8, 4, 3];
